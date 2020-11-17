@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--meta tag for responsive page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!--link to external style css-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--google font external stylesheet-->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>contact form></title>
+  </head>
+
+  <body>
+    <header>
+      <!--div tag with jumbotron-ch class-->
+      <div class="jumbotron-ch">
+        <!--nav bar tag-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <span class="navbar-brand mb-0 h1">Daniel Mestawat</span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">About</a> <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+        <!--header tag-->
+    </header>
+      <div class="row">
+          <div class="col-md-12">
+            <div>
+              <h1 style="font-weight: bold;">Contact</h1>
+            </div>
+          </div>
+      </div>
+      <!-- form tag-->
+    <form class="needs-validation" novalidate>
+      <div class="form-row">
+        <div class="col-md-3 mb-3">
+          <label for="validation">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom02">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+        </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom03">Message</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom04">State</label>
+          <select class="custom-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-feedback">
+          </div>
+        </div>
+        <!--div tag for the form zip -->
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom05">Phone Number</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+          </div>
+        </div>
+      </div>
+      <!--div tag for the agreements form-->
+      <div class="form-group">
+        <button class="btn btn-secondary" type="submit">Submit form</button>
+    </form>
+     <!--footer tag inside div-->
+    <footer class="footer">
+      <div class="container">
+        <span>Daniel Mestawat &copy; 2020 all rights reserved!</span>
+      </div>
+    </footer>
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+  </body>
+</html>  
